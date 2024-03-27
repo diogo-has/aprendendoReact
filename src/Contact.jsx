@@ -3,6 +3,7 @@ import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility
 import 'leaflet-defaulticon-compatibility';
 
 import Menu from "./components/Menu"
+import style from "./Contact.module.css"
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
@@ -13,7 +14,7 @@ export const Contact = () => {
     return (
         <>
             <Menu />
-            <div>
+            <div className={style.sectionContact}>
                 <h1>Contato</h1>
                 <div>
                     <h2>Mapa</h2>
